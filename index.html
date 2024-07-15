@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="number" id="phone" placeholder="رقم الهاتف إن وجد..." autocomplete="off">
+                            <input type="tel" id="phone" pattern="[0-9]{4} [0-9]{4}" placeholder="رقم الهاتف إن وجد..." autocomplete="off">
                         </div>
 
                         <div id="popup">
@@ -91,29 +91,38 @@
                     <form class="fileInfo">
                         <p>نوع الملف الذي تريد ترجمته:</p>
                         <div class="form-group">
-                            <select id="fileType" required>
-                                <option value="" selected disabled>اختر نوع الملف</option>
+                            <label for="fileType">إختر نوع الملف</label>
+                            <input list="file-type" id="fileType" name="fileType" />
+                            
+                            <datalist id="file-type">
                                 <option value="txt">Text (.txt)</option>
                                 <option value="doc">Word (.doc,.docx)</option>
                                 <option value="pdf">PDF (.pdf)</option>
                                 <option value="jpg">JPG (.jpg,.jpeg)</option>
                                 <option value="png">PNG (.png)</option>
                                 <option value="mp4">MP4 (.mp4)</option>
-                            </select>
+                              </datalist>
                         </div>
 
                         <div class="form-group">
                             <label for="sourceLanguage">لغة المصدر</label>
-                            <select id="sourceLanguage" required>
+                            <input list="source-language" id="sourceLanguage" name="sourceLanguage" />
+
+                            <datalist id="source-language" required>
                                 <option value="arabic">العربية</option>
-                            </select>
+                                <option value="english">الإنجليزية</option>
+                            </datalist>
                         </div>
 
                         <div class="form-group">
+
                             <label for="translationLanguage">لغة الترجمة</label>
-                            <select id="translationLanguage" required>
+                            <input list="translation-language" id="translationLanguage" name="translationLanguage" />
+
+                            <datalist id="translation-language" required>
+                                <option value="arabic">العربية</option>
                                 <option value="english">الإنجليزية</option>
-                            </select>
+                            </datalist>
                         </div>
 
                         <div class="form-group">
