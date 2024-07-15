@@ -23,7 +23,11 @@ header nav img{
     width: 150px;
 }
 
-header nav a.get-start-button{
+header nav h1.title{
+    font-size: 36px;
+}
+
+/* header nav a.get-start-button{
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -37,6 +41,202 @@ header nav a.get-start-button{
     margin: 5px;
 }
 
+header nav a.get-start-button i{
+    position: absolute;
+    transform: translate(30px, 0px);
+    opacity: 0;
+    font-size: 24px;
+}
+
+header nav a.get-start-button:hover i{
+    position: absolute;
+    transform: translate(-10px, 0px);
+    opacity: 1;
+}
+
+
 header nav a.get-start-button:hover{
-    background-color: #52cecebd;
+    padding-left: 50px;
+    background-color: #00ffffbd;
+    color: #1D1F28;
+} */
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul h2{
+    margin-bottom: 10px;
+}
+
+header nav ul li{
+    margin-bottom: 2px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #1D1F28;
+    font-weight: 500;
+}
+
+header nav ul li a:hover{
+    color: #00ffffbd;
+    text-decoration: underline;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+main section div div.header h1{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+
+main section div div.description{
+    padding: 20px;
+}
+
+main section div div.description p{
+    font-size: 20px;
+}
+
+main section div div.footer{
+    margin-top: 20px;
+}
+
+main section div div.footer a.get-started-button{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background-color: #e8eaea;
+    color: black;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+main div.footer a.get-started-button i{
+    position: absolute;
+    transform: translate(30px, 0px);
+    opacity: 0;
+    font-size: 24px;
+}
+
+main div.footer a.get-started-button:hover i{
+    position: absolute;
+    transform: translate(-10px, 0px);
+    opacity: 1;
+}
+
+
+main div.footer a.get-started-button:hover{
+    padding-left: 50px;
+    background-color: #00ffffbd;
+    color: #1D1F28;
+}
+
+main section.form-info div.description form{
+    width: 100%;
+}
+
+main section.form-info div.description form div.form-group{
+    margin-bottom: 20px;
+}
+
+main section.form-info div.description form div.form-group label{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+main section.form-info div.description form div.form-group input{
+    width: 80%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+main section.form-info div.description form div.form-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+main section.form-info div.description form div.form-buttons button{
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #00ffffbd;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+main section.form-info div.description form div.form-buttons button:hover{
+    background-color: #e8eaea;
+}
+
+main section.form-info div.description form div.form-buttons input{
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+main section.form-info div.description form div.form-buttons input:hover{
+    background-color: #e8eaea;
+}
+
+
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  
+  #popup p {
+    margin-bottom: 15px;
+  }
+  
+  #closePopup {
+    padding: 6px 12px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #1D1F28;
+    color: #e8eaea;
 }

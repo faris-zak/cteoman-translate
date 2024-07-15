@@ -7,21 +7,142 @@
     <title>CTE Oman Translator</title>
     <link rel="icon" href="assets/images/icon.png">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 </head>
 <body>
     <header>
         <nav>
-            <a href="" class="get-start-button">ابدأ بالترجمة</a>
+            <!-- <a href="" class="get-start-button">ابدأ بالترجمة <span><i class="fi fi-rr-language"></i></span></a> -->
             <ul>
                 <h2>تواصل معنا عبد الوسائل الآتيه: </h2>
-                <li><span>الواتساب: </span><a href="https://wa.me/+96894575999?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.">+968 94575999</a></li>
-                <li><span>الإنستقرام: </span><a href="https://www.instagram.com/cte_oman/">@cte_oman</a></li>
-                <li><span>البريد الإلكتروني: </span><a href="mailto:cte_oman@hotmail.com">cte_oman@hotmail.com</a></li>
+                <li><span>الواتساب: </span><a href="https://wa.me/+96894575999?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." dir="auto">+968 94575999</a></li>
+                <li><span>الإنستقرام: </span><a href="https://www.instagram.com/cte_oman/" dir="auto">@cte_oman</a></li>
+                <li><span>البريد الإلكتروني: </span><a href="mailto:cte_oman@hotmail.com" dir="auto">cte_oman@hotmail.com</a></li>
             </ul>
-            <img src="assets/images/cte-oman.jpg" alt="CTE Oman Logo">
+            <h1 class="title">خدمة مدينة خبراء التقنية <span style="color: #00ffffbd; text-decoration: underline;">للترجمة</span></h1>
+            <img src="assets/images/cteoman.jpg" alt="CTE Oman Logo">
         </nav>
     </header>
 
+    <main>
+        <section class="intro">
+            <div class="intro-content">
+                <div class="header">
+                    <h1>أنت هُنا...</h1>
+                </div>
+
+                <div class="description">
+                    <p>أنت تريد الترجمة؟ أعلم أننا نحتاج إلى معلوماتك حول الموضوع الذي تريد الترجمة.</p>
+                </div>
+
+                <div class="footer">
+                    <a href="#userInfo" class="get-started-button">ابدأ <span><i class="fi fi-rr-sparkles"></i></span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-info" id="formInfo">
+            <div class="user-info-content">
+                <div class="header">
+                    <h1>ها أنت في الخطوة الأولى<h1>
+                </div>
+
+                <div class="description">
+                    <form id="userInfoForm">
+                        <p>تفضل بملء هذا النموذج لنتمكن من التواصل معك لاحقاً:</p>
+
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="الأسم" autocomplete="given-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="البريد الإلكتروني" autocomplete="off" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" id="phone" placeholder="رقم الهاتف إن وجد..." autocomplete="off">
+                        </div>
+
+                        <div id="popup">
+                            <p>تم تأكيد النموذج بنجاح!</p>
+                            <button type="button" id="closePopup">إغلاق</button>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" id="submitButton" disabled>تأكيد</button>
+                            <input class="clear" type="reset" value="مسح">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer">
+                    <a href="#uploadFile" class="get-started-button" id="nextButton">الخطوة الثانية <span><i class="fi fi-rr-caret-down"></i></span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="upload-file" id="uploadFile">
+            <div class="upload-content">
+                <div class="header">
+                    <h1>ها أنت في الخطوة الثانية<h1>
+                </div>
+                <div class="description">
+                    <form class="fileInfo">
+                        <p>نوع الملف الذي تريد ترجمته:</p>
+                        <div class="form-group">
+                            <select id="fileType" required>
+                                <option value="" selected disabled>اختر نوع الملف</option>
+                                <option value="txt">Text (.txt)</option>
+                                <option value="doc">Word (.doc,.docx)</option>
+                                <option value="pdf">PDF (.pdf)</option>
+                                <option value="jpg">JPG (.jpg,.jpeg)</option>
+                                <option value="png">PNG (.png)</option>
+                                <option value="mp4">MP4 (.mp4)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sourceLanguage">لغة المصدر</label>
+                            <select id="sourceLanguage" required>
+                                <option value="arabic">العربية</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="translationLanguage">لغة الترجمة</label>
+                            <select id="translationLanguage" required>
+                                <option value="english">الإنجليزية</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="important">
+                            <label for="important">ملف ذو أهمية قصوى.</label>
+                            <br>
+                            <input type="checkbox" id="important">
+                            <label for="important">ملف ذو معلومات حساسة.</label>
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <input type="file" id="file" accept=".txt,.doc,.docx,.pdf,.jpg,.jpeg,.png" required>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" id="uploadButton">تحميل الملفات</button>
+                        </div> -->
+                    </form>
+                </div>
+                <div class="footer">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 مدينة خبراء التقنية</p>
+    </footer>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
